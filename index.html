@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- it is better to keep the react cdn scripts in the head tag in order for them to load first -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- below hello will be replaced by the script.js content since we are using react render in root -->
+      <p>hello</p>
+    </div>
+
+    <!-- the cdn files should be before the script.js file so that react is loaded first -->
+    <script src="script.js"></script>
+  </body>
+</html>
